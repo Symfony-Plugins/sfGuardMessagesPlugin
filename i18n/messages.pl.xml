@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.0">
+  <file original="global" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit>
+        <source>Message</source>
+		<target>Wiadomość</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Flags</source>
+		<target>Flagi</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Type</source>
+		<target>Typ</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Priority</source>
+		<target>Priorytet</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Visibility</source>
+		<target>Widoczność</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Is active?</source>
+		<target>Aktywna?</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Visible from</source>
+		<target>Widoczna od</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Visible to</source>
+		<target>Widoczna do</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Target groups</source>
+		<target>Wiadomość dla grup</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Target users</source>
+		<target>Wiadomość dla użytkowików</target>
+      </trans-unit>
+      <trans-unit>
+        <source>New message</source>
+		<target>Nowa wiadomość</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Messages</source>
+		<target>Wiadomości</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Name</source>
+		<target>Nazwa</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Description</source>
+		<target>Opis</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Priorities of the message</source>
+		<target>Priorytety wiadomości</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Edit %%name%% message priority</source>
+		<target>Edycja priorytetu wiadomości %%name%%</target>
+      </trans-unit>
+      <trans-unit>
+        <source>New message priority</source>
+		<target>Nowy priorytet wiadomości</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Types of the message</source>
+		<target>Typy wiadomości</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Edit %%name%% message type</source>
+		<target>Edycja typu wiadomości %%name%%</target>
+      </trans-unit>
+      <trans-unit>
+        <source>New message type</source>
+		<target>Nowy typ wiadomości</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

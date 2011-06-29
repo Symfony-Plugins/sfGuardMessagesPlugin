@@ -1,0 +1,31 @@
+generator:
+  class: sfPropelGenerator
+  param:
+    model_class:           sfGuardMessageType
+    theme:                 admin15
+    non_verbose_templates: true
+    with_show:             false
+    singular:              sfGuardMessageType
+    plural:                sfGuardMessageTypes
+    route_prefix:          sf_guard_message_type
+    with_propel_route:     1
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      
+      fields:  ~
+      
+      list:
+        title: Types of the message
+        display: [=name, description]
+      
+      filter:  ~
+      
+      form:    ~
+      
+      edit:
+        title: Edit %%name%% message type
+      
+      new:
+        title: New message type

@@ -1,0 +1,37 @@
+generator:
+  class: sfPropelGenerator
+  param:
+    model_class:           sfGuardMessage
+    theme:                 admin15
+    non_verbose_templates: true
+    with_show:             false
+    singular:              sfGuardMessage
+    plural:                sfGuardMessages
+    route_prefix:          sf_guard_message
+    with_propel_route:     1
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      
+      fields:
+        is_active: { label: "Is active?" }
+      
+      list:
+        title: Messages
+      
+      filter:
+        display: [type_id, priority_id, is_active, visible_from]
+      
+      form:
+        display:
+          NONE:          [message]
+          Flags:         [type_id, priority_id, is_active]
+          Visibility:    [visible_from, visible_to]
+          Target groups: [sf_guard_message_group_list]
+          Target users:  [sf_guard_message_user_list]
+      
+      edit:    ~
+      
+      new:
+        title: New message

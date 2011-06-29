@@ -1,0 +1,31 @@
+generator:
+  class: sfPropelGenerator
+  param:
+    model_class:           sfGuardMessagePriority
+    theme:                 admin15
+    non_verbose_templates: true
+    with_show:             false
+    singular:              sfGuardMessagePriority
+    plural:                sfGuardMessagePrioritys
+    route_prefix:          sf_guard_message_priority
+    with_propel_route:     1
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      
+      fields:  ~
+      
+      list:
+        title:   Priorities of the message
+        display: [=name, description]
+      
+      filter:  ~
+      
+      form:    ~
+      
+      edit:
+        title: Edit %%name%% message priority
+      
+      new:
+        title: New message priority
