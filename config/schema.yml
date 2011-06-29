@@ -1,33 +1,35 @@
 propel:
-  _attributes:      { package: plugins.sfGuardMessagesPlugin.lib.model }
-
-  sf_guard_messages_priority:
-    _attributes:    { phpName: sfGuardMessagesPriority }
+  _attributes:      { package: plugins.sfPropelGuardMessagesPlugin.lib.model }
+  
+  sf_guard_message_priority:
+    _attributes:    { phpName: sfGuardMessagePriority }
     id:             ~
     name:           { type: varchar, size: 255, required: true, index: unique }
     description:    { type: longvarchar }
-
-  sf_guard_messages_type:
-    _attributes:    { phpName: sfGuardMessagesType }
+    
+  sf_guard_message_type:
+    _attributes:    { phpName: sfGuardMessageType }
     id:             ~
     name:           { type: varchar, size: 255, required: true, index: unique }
     description:    { type: longvarchar }
-
-  sf_guard_messages_message:
-    _attributes:    { phpName: sfGuardMessagesMessage }
+    
+  sf_guard_message:
+    _attributes:    { phpName: sfGuardMessage }
     id:             ~
-    type_id:        { type: integer, required: true, foreignTable: sf_guard_messages_type, foreignReference: id, onDelete: cascade }
-    priority_id:    { type: integer, required: true, foreignTable: sf_guard_messages_priority, foreignReference: id, onDelete: cascade }
+    created_at:     ~
     message:        { type: longvarchar, required: true }
-    start_date:     { type: date, required: true }
-    end_date:       { type: date }
+    type_id:        { type: integer, required: true, foreignTable: sf_guard_message_type, foreignReference: id, onDelete: cascade }
+    priority_id:    { type: integer, required: true, foreignTable: sf_guard_message_priority, foreignReference: id, onDelete: cascade }
+    is_active:      { type: boolean, required: true, defaultValue: false }
+    visible_from:   { type: timestamp, required: true }
+    visible_to:     { type: timestamp }
+    
+  sf_guard_message_user:
+    _attributes:    { phpName: sfGuardMessageUser }
+    message_id:     { type: integer, primaryKey: true, required: true, foreignTable: sf_guard_message, foreignReference: id, onDelete: cascade }
+    user_id:        { type: integer, primaryKey: true, required: true, foreignTable: sf_guard_user, foreignReference: id, onDelete: cascade }
 
-  sf_guard_messages_message_group:
-    _attributes:    { phpName: sfGuardMessagesMessageGroup }
-    message_id:     { type: integer, required: true, primaryKey: true, foreignTable: sf_guard_messages_message, foreignReference: id, onDelete: cascade }
-    group_id:       { type: integer, required: true, primaryKey: true, foreignTable: sf_guard_group, foreignReference: id, onDelete: cascade }
-
-  sf_guard_messages_message_user:
-    _attributes:    { phpName: sfGuardMessagesMessageUser }
-    message_id:     { type: integer, required: true, primaryKey: true, foreignTable: sf_guard_messages_message, foreignReference: id, onDelete: cascade }
-    user_id:        { type: integer, required: true, primaryKey: true, foreignTable: sf_guard_user, foreignReference: id, onDelete: cascade }
+  sf_guard_message_group:
+    _attributes:    { phpName: sfGuardMessageGroup }
+    message_id:     { type: integer, primaryKey: true, required: true, foreignTable: sf_guard_message, foreignReference: id, onDelete: cascade }
+    group_id:       { type: integer, primaryKey: true, required: true, foreignTable: sf_guard_group, foreignReference: id, onDelete: cascade }
