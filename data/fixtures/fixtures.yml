@@ -1,0 +1,18 @@
+sfGuardMessagePriority:
+  low:
+    name:        low
+    description: Low
+  medium:
+    name:        medium
+    description: Medium
+  high:
+    name:        high
+    description: High
+    
+sfGuardMessageType:
+  info:
+    name:        info
+    description: Info
+  alert:
+    name:        alert
+    description: Alert
