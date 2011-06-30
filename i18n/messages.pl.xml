@@ -19,8 +19,8 @@
 		<target>Priorytet</target>
       </trans-unit>
       <trans-unit>
-        <source>Visibility</source>
-		<target>Widoczność</target>
+        <source>Dates</source>
+		<target>Daty</target>
       </trans-unit>
       <trans-unit>
         <source>Is active?</source>

@@ -30,7 +30,7 @@ generator:
         display:
           NONE:          [message]
           Flags:         [type_id, priority_id, is_active]
-          Visibility:    [visible_from, visible_to]
+          Dates:         [visible_from, visible_to]
           Target groups: [sf_guard_message_group_list]
           Target users:  [sf_guard_message_user_list]
       
