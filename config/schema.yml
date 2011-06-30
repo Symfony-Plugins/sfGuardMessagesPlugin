@@ -1,5 +1,5 @@
 propel:
-  _attributes:      { package: plugins.sfPropelGuardMessagesPlugin.lib.model }
+  _attributes:      { package: plugins.sfGuardMessagesPlugin.lib.model }
   
   sf_guard_message_priority:
     _attributes:    { phpName: sfGuardMessagePriority }
