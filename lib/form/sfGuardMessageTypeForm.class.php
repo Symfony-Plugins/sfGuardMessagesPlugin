@@ -3,9 +3,9 @@
 /**
  * sfGuardMessageType form.
  *
- * @package    ##PROJECT_NAME##
+ * @package    sfGuardMessagesPlugin
  * @subpackage form
- * @author     ##AUTHOR_NAME##
+ * @author     Tomasz Jakub Rup <tomasz.rup@gmail.com>
  */
 class sfGuardMessageTypeForm extends BasesfGuardMessageTypeForm
 {
