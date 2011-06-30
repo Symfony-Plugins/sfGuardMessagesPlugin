@@ -15,10 +15,13 @@ generator:
       actions: ~
       
       fields:
-        is_active: { label: "Is active?" }
+        is_active:                 { label: "Is active?" }
+        sf_guard_message_type:     { label: Type }
+        sf_guard_message_priority: { label: Priority }
       
       list:
-        title: Messages
+        title:   Messages
+        display: [message, sf_guard_message_type, sf_guard_message_priority, is_active, visible_from]
       
       filter:
         display: [type_id, priority_id, is_active, visible_from]
