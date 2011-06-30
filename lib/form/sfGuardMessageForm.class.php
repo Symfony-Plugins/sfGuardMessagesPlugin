@@ -12,6 +12,8 @@ class sfGuardMessageForm extends BasesfGuardMessageForm
 
   public function configure()
   {
+    $this->getWidget('visible_from')
+            ->setDefault(date('Y-m-d H:i:s'));
     $this->getWidget('sf_guard_message_group_list')
             ->setOption('multiple', true)
             ->setOption('expanded', true);
